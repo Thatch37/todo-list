@@ -1,12 +1,12 @@
 
 import './App.css'
+
+function App() {
 const todoList = [
   {id: 1, title: "review"},
   {id: 2, title: "apply knowledge"},
   {id: 3, title: "code"},
 ]
-function App() {
-
   return (
     <div>
       <h1>Todo List</h1>

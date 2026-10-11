@@ -1,16 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Todo List App
+The Todo List App is a simple task management application using bsic react concepts including componets, vite and javascript.
+Installation Instructions 
+1. Make sure you have Node.js and npm installed on your computer
+2. clone the project repository from github onto your local machine
+3. open a terminal in the project directory.
+4. install the vite and npm onto your code editor using the phrase: "npx create-vite@latest --template react" after any prompts, install the project dependecies using npm: "npm install"
+5. run the dev server by using the phrase: "npm run dev" into the terminal+

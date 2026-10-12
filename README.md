@@ -1,5 +1,5 @@
 Todo List App
-The Todo List App is a simple task management application using bsic react concepts including componets, vite and javascript.
+The Todo List App is a simple task management application using basic react concepts including componets, vite and javascript.
 Installation Instructions 
 1. Make sure you have Node.js and npm installed on your computer
 2. clone the project repository from github onto your local machine

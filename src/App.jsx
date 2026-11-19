@@ -18,7 +18,7 @@ function App() {
 
   function completeTodo(id) {
     const updatedTodoList = todoList.map((todo) => 
-      todo.id === id ? { ...todo, isComplete: true } : todo,
+      todo.id === id ? { ...todo, isCompleted: true } : todo,
   );
   setTodoList(updatedTodoList);
   }

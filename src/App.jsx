@@ -3,19 +3,30 @@ import './App.css'
 import TodoList from './TodoList'
 import TodoForm from './TodoForm';
 import {useState} from 'react';
-const todos = [
-  {id: 1, title: "review"},
-  {id: 2, title: "apply knowledge"},
-  {id: 3, title: "code"},
-]
+
 function App() {
-  const [todoList, setTodoList] = useState(todos)
+  const [todoList, setTodoList] = useState([])
+  const addTodo = (todoTitle) =>{
+    const newTodo = {
+      id: Date.now(),
+      title: todoTitle,
+      isCompleted: false,
+
+    };
+    setTodoList(previous => [newTodo, ...previous])
+  }
+
+  function completeTodo(id) {
+    const updatedTodoList = todoList.map((todo) => 
+      todo.id === id ? { ...todo, isCompleted: true } : todo,
+  );
+  setTodoList(updatedTodoList);
+  }
   return (
     <div>
       <h1>Todo List</h1>
-      <TodoForm />
-      <TodoList todoList={todoList} />
-
+      <TodoForm onAddTodo={addTodo} />
+      <TodoList todoList={todoList} onCompleteTodo = {completeTodo} />
     </div>)
 }
 
